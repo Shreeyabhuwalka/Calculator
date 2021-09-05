@@ -152,5 +152,48 @@
 
         app:layout_constraintTop_toBottomOf="@+id/plus" />
 
+    <Button
+        android:id="@+id/dot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/zero"
+        app:layout_constraintTop_toBottomOf="@id/one" />
+
+    <Button
+        android:id="@+id/zero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="0"
+        app:layout_constraintTop_toBottomOf="@id/two"
+        app:layout_constraintLeft_toRightOf="@id/dot"
+        app:layout_constraintRight_toLeftOf="@id/equals"
+        />
+
+    <Button
+        android:id="@+id/equals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="="
+        app:layout_constraintRight_toLeftOf="@id/minus"
+        app:layout_constraintLeft_toRightOf="@id/zero"
+
+        app:layout_constraintTop_toBottomOf="@+id/three" />
+
+    <Button
+        android:id="@+id/minus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="*"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/equals"
+
+        app:layout_constraintTop_toBottomOf="@+id/multi" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
